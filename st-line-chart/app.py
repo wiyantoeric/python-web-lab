@@ -4,7 +4,7 @@ import numpy as np
 
 st.set_page_config(
     page_title='Line Chart',
-    page_icon=None,
+    page_icon21=None,
 )
 
 # Create chart with random value
