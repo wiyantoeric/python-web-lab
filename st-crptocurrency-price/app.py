@@ -3,7 +3,7 @@ import pandas as pd
 
 # Fetch data
 @st.cache_data(ttl=600)
-def load_data(sheets_url):
+def load_data(sheets_url: str):
     csv_url = sheets_url.replace("/edit#gid=", "/export?format=csv&gid=")
     return pd.read_csv(csv_url, on_bad_lines="skip")
 
